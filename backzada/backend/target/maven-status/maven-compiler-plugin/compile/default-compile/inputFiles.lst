@@ -1,0 +1,11 @@
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\api\LearnlyServer.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\config\CorsConfiguration.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\controller\CursoController.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\controller\UsuarioController.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\handlers\UsuarioHandler.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\entity\Curso.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\entity\Usuario.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\repository\CursoRepository.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\repository\UsuarioRepository.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\services\CursoService.java
+c:\Users\Breno\Downloads\pizzariad-main\backend\src\main\java\com\learnly\model\services\UsuarioService.java

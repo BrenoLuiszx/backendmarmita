@@ -1,0 +1,318 @@
+/* Header */
+header {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 120px;
+    background-color: #810303;
+    color: rgb(167, 0, 0);
+    border-bottom: 5px solid #610101;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.abas {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(248, 236, 209);
+    padding: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.abas:hover {
+    color: #ffeecf; /* Vermelho tomate ao passar o mouse */
+}
+
+/* Separador */
+.separador {
+    color: rgb(255, 232, 206);
+    font-size: 22px;
+}
+
+/* Logo ou imagem */
+img {
+    height: 190px;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fae2b6;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: start; /* Alinha os itens à esquerda */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+
+
+
+/* Contêiner principal */
+.app-container {
+    
+    
+    background-color: #790202;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 60px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 43, 43, 0.3);
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    color: #700707;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #810000;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder {
+    color: #a17b61;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    border: 2px solid #810000;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* Botão */
+.form-group button {
+    width: 100%;
+    padding: 15px;
+    background-color: #530202;
+    color: rgb(253, 167, 130);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f79d61;
+}
+
+/* Links de registro */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(247, 236, 188);
+}
+
+.register-link a {
+    color: #f7deb9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Alinhamento da página inicial */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cards de Produtos */
+.produto-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 280px; /* Tamanho fixo para o card */
+    margin: 20px;
+}
+
+.produto-card:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.botoes-card {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: auto;
+}
+
+/* Cardápio de Marmitas (seção de cardápio) */
+.cardapio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cardapio-item {
+    background-color: #800000;
+    color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.cardapio-item:hover {
+    transform: scale(1.05);
+}
+
+.cardapio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.cardapio-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.cardapio-item p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.cardapio-item .preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+ /* Título da seção de Produtos Cadastrados (Se houver uma classe específica) */
+.produtos-cadastrados-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #5a0000; /* Vinho escuro para contraste no fundo claro abaixo */
+    margin-bottom: 20px;
+}
+
+/* Contêiner da lista de Cards (Ajuste o alinhamento para o centro) */
+.cards-container {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 30px; /* Aumenta o espaçamento */
+  padding: 20px 0;
+}
+
+/* Card Individual */
+.produto-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* Bordas mais suaves */
+    padding: 15px;
+    background-color: #ffffff; /* Fundo branco, contraste mais limpo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+    width: 250px; /* Levemente menor para um visual mais limpo */
+}
+
+.produto-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação sutil em vez de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Placeholder para imagem de marmita */
+.produto-imagem-placeholder {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.produto-card .descricao {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.produto-card .preco {
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.produto-card .categoria {
+    color: #3498db;
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.produto-card .tempo {
+    color: #27ae60;
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 500;
+}

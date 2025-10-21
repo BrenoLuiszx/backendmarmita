@@ -1,0 +1,180 @@
+:root {
+  --primary-color: hsl(0, 82%, 25%);
+  --secondary-color: #960909;
+  --text-color: #940808;
+  --background-light: rgb(252, 225, 176);
+  --shadow-light: rgba(238, 197, 144, 0.801);
+  --border-radius-base: 6px;
+  --spacing-unit: 10px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.app-container {
+  max-width: 90px;
+  margin: 60px auto;
+  background: var(--background-light);
+  padding: 30px 40px;
+  border-radius: var(--border-radius-base);
+  box-shadow: 0 4px 20px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.cards-container {
+  display: flex;
+  justify-content: start; /* Alinha os itens à esquerda */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+h2 {
+  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f3e0a1; /* cor vermelha escura, mesma do botão */
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+
+
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  color: #f3e0a1;
+  
+}
+
+label {
+ label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #8d0808; /* <-- essa linha define a cor do texto do label */
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="file"] {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-base);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  color: #940808;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: var(--secondary-color);
+  color: #940808;
+  box-shadow: 0 0 0 3px rgba(209, 5, 5, 0.2);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+ul li {
+  background-color: rgba(139, 139, 139, 0.7);
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-base);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: var(--text-color);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li div.list-item-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  input[type="file"] {
+    font-size: 0.9em;
+    padding: 10px
+    color(--secondary-color)
+  }
+
+  button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
